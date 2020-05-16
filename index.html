@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli|Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(90deg, rgba(13,20,9,1) 0%, rgba(1,85,2,1) 50%, rgba(25,87,36,1) 100%, rgba(0,212,255,1) 100%);
+        font-family: 'Nunito', sans-serif
+    }
+
+    .container {
+        width: 75%;
+        height: 74%;
+        display: flex;
+        justify-content: space-between;
+box-shadow: 0px 25px 50px rgba(0,0,0,0.5);
+    }
+
+    .left {
+        width: 30%;
+        color: white;
+        position: relative;
+    }
+
+    .left-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-content:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: url("bg2.jpg"), linear-gradient(to bottom, rgb(92, 89, 89), rgb(87, 78, 78));
+        background-position: center;
+        background-size: cover;
+    }
+
+    .left-btn,
+    .login-btn {
+        border: none;
+        height: 40px;
+        margin-top: 15px;
+        padding: 13px;
+        font-size: 13px;
+        font-weight: 600;
+        background-color: #4ab14e;
+        border-radius: 3px;
+        color: white;
+    }
+
+    .right {
+        position: relative;
+        width: 70%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        height: 88px;
+    width: 84px;
+    }
+    .logo img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .right h2 {
+        font-size: 40px;
+        color: #4ab14e;
+    }
+
+    .right .form {
+        position: relative;
+        width: 53%;
+        height: 257px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form input {
+        color: #014401;
+        outline: none;
+        background: transparent;
+        height: 25px;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid grey;
+        font-size: 17px;
+    }
+
+    .form label {
+        /* margin: 5px; */
+        width: 100%;
+        text-align: left;
+    }
+
+    .login-btn {
+        width: 123px;
+        position: absolute;
+        bottom: 3px;
+        left: 5px;
+    }
+
+    .form-box {
+        width: 100%;
+        margin: 10px;
+    }
+    .query{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .login-query{
+        display: flex;
+        width: 128px;
+    }
+    .opt{
+        display: block;
+        width: 103px;
+    }
+    .query a{
+        text-decoration: none;
+        color:#4ab14e;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="left-content">
+                <h2>Try It For Free Today!</h2>
+                <p>No Credit Card Required For 30 Days.</p>
+                <button class="left-btn">CREATE ACCOUNT</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <h2>Welcome Back!</h2>
+            <div class="form">
+                <div class="email-box form-box">
+                    <label for="email">Email</label>
+                    <input type="email">
+                </div>
+                <div class="password-box form-box">
+                    <label for="password">Password</label>
+                    <input type="password">
+                </div>
+                <div class="query">
+                   <div class="login-query">
+                    <input type="checkbox" style=" width: 18px;
+                    margin-right: 5px;">
+                    <label for="opt"><p class="opt">Stay signed in</p></label>
+                   </div>
+                    <a href="#"><i class="fas fa-lock"></i> Forget password ?</a>
+                </div>
+                <button class="login-btn">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
